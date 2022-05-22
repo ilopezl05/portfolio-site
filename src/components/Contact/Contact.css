@@ -1,0 +1,49 @@
+.contact-section .contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-section .contact-form form, .contact-section .contact-form label {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .contact-form div {
+  align-content: center;
+  text-align: center;
+  width: 50%;
+}
+.contact-section .contact-form div p {
+  font-size: clamp(4rem, 60%, 10rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #FFCE1D;
+}
+.contact-section .contact-form div img {
+  width: clamp(12rem, 50%, 32rem);
+  margin-bottom: 3rem;
+}
+.contact-section .contact-form form {
+  padding: 1rem;
+  outline: 2px solid #6B62FF;
+  border-radius: 0.3rem;
+}
+.contact-section .contact-form form label {
+  margin-bottom: 1.5rem;
+  color: #6B62FF;
+}
+.contact-section .contact-form form input[type=text], .contact-section .contact-form form textarea {
+  border: 1px solid #6B62FF;
+  margin-top: 0.2rem;
+  padding: 1rem;
+}
+.contact-section .contact-form form input[type=submit] {
+  background-color: #6B62FF;
+  color: #f0f0ff;
+}
+.contact-section .contact-form form input {
+  height: 2rem;
+}
+.contact-section .contact-form form input[type=text], .contact-section .contact-form form input[type=submit], .contact-section .contact-form form textarea {
+  border-radius: 0.3rem;
+}/*# sourceMappingURL=Contact.css.map */

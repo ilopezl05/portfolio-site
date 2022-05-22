@@ -1,0 +1,11 @@
+footer {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  background-color: #6A61FF;
+  height: 3rem;
+}
+footer .footer-container p {
+  text-align: center;
+  color: #f0f0ff;
+  line-height: 3rem;
+}/*# sourceMappingURL=Footer.css.map */

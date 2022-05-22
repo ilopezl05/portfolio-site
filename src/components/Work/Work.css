@@ -1,0 +1,96 @@
+.work-section .work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+.work-section .work-list .work-item {
+  list-style: none;
+  border-radius: 1rem;
+  height: 24rem;
+  background-origin: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: all 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(107, 98, 255, 0.1);
+  background-blend-mode: overlay;
+}
+.work-section .work-list .work-item h4 {
+  color: #f0f0ff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.work-section .work-list .work-item p {
+  color: #f0f0ff;
+  margin-bottom: 1rem;
+}
+.work-section .work-list .work-item p span {
+  display: none;
+}
+.work-section .work-list .work-item ul.work-item-technologies {
+  list-style: none;
+  font-size: 0.7rem;
+  justify-content: space-around;
+  color: #f0f0ff;
+  display: none;
+  margin: 0 2rem;
+  border-top: 1px solid #f0f0ff;
+}
+.work-section .work-list .work-item ul.work-item-links {
+  display: none;
+  justify-content: space-around;
+}
+.work-section .work-list .work-item ul.work-item-links li {
+  list-style: none;
+  width: 40%;
+  height: 1.2rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  background-color: #f0f0ff;
+  width: clamp(5rem, 40%, 10rem);
+  height: 2rem;
+  line-height: 2rem;
+}
+.work-section .work-list .work-item ul.work-item-links li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #6B62FF;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.work-section .work-list .work-item > * {
+  padding: 1rem 2rem;
+}
+.work-section .work-list .work-item:hover {
+  justify-content: center;
+  background-color: rgba(45, 43, 99, 0.9);
+}
+.work-section .work-list .work-item:hover h4 {
+  color: #FFCE1D;
+}
+.work-section .work-list .work-item:hover p span {
+  display: block;
+}
+.work-section .work-list .work-item:hover ul {
+  display: flex;
+  color: #FFCE1D;
+}
+.work-section .work-list .work-item:hover .work-item-links {
+  justify-content: space-around;
+}
+.work-section .work-list .work-item:hover .work-item-links a {
+  color: #6B62FF;
+  background-color: #f0f0ff;
+}
+.work-section .work-list .work-item:hover .work-item-links {
+  display: flex;
+}
+.work-section .work-list #crypto {
+  background-image: url("../../assets/crypto-thumbnail-img.jpeg");
+}
+.work-section .work-list #todo {
+  background-image: url("../../assets/todo-thumbnail-img.jpeg");
+}/*# sourceMappingURL=Work.css.map */

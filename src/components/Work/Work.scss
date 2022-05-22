@@ -1,0 +1,119 @@
+.work-section {
+
+    & .work-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 2rem;
+    
+        & .work-item {
+            // background-color: #6B62FF;
+            list-style: none;
+            border-radius: 1rem;
+            height: 24rem;
+            background-origin: content-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: all 0.3s ease-in-out;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(107, 98, 255, 0.1); 
+            background-blend-mode: overlay;
+            
+            & h4 {
+                color: #f0f0ff;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            & p {
+                color: #f0f0ff;
+                margin-bottom: 1rem;
+
+                & span {
+                    display: none;
+                }
+            }
+
+            & ul.work-item-technologies {
+                list-style: none;
+                font-size: .7rem;
+                justify-content: space-around;
+                color: #f0f0ff;
+                display: none;
+                margin: 0 2rem;
+                border-top: 1px solid #f0f0ff;
+            }
+
+            & ul.work-item-links {
+                display: none;
+                justify-content: space-around;
+
+                & li {
+                    list-style: none;
+                    
+                    width: 40%;
+                    height: 1.2rem;
+                    text-align: center;
+                    border-radius: 0.2rem;
+                    background-color: #f0f0ff;
+                    width: clamp(5rem, 40%, 10rem);
+                    height: 2rem;
+                    line-height: 2rem;
+
+                    & a {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #6B62FF;
+                        width: 100%;
+                        border-radius: .5rem;
+                    }
+                }
+
+            }
+        }
+
+        & .work-item > * {
+            padding: 1rem 2rem;
+        }
+
+        & .work-item:hover {
+            justify-content: center;
+            // background-color: rgba(107, 98, 255, .9);
+            background-color: rgba(45, 43, 99, 0.9);
+
+            & h4 {
+                color: #FFCE1D;
+            }
+
+            & p {
+                & span {
+                    display: block;
+                }
+            }
+            & ul {
+                display: flex;
+                color: #FFCE1D;
+            }
+
+            & .work-item-links {
+                justify-content: space-around;
+            
+                a {
+                    color: #6B62FF;
+                    background-color: #f0f0ff;
+                }
+            }
+
+            & .work-item-links {display: flex;}
+        }
+
+        & #crypto {
+            background-image: url('../../assets/crypto-thumbnail-img.jpeg');
+        }
+        & #todo {
+            background-image: url('../../assets/todo-thumbnail-img.jpeg');
+        }
+    }
+}
